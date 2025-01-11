@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+}
+
+.logo-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #3d016f;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a li {
+    padding: 10px;
+    color: #ffffff;
+    list-style: none;
+    font-size: 17px;
+}
+
+nav ul a:hover li {
+    background-color: #ffffff;
+    transition: all 0.2s;
+    color: #3d016f;
+    border-radius: 10px;
+}
+
+.menu-responsivo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-responsivo .material-symbols-outlined {
+    color: #ffffff;
+    font-variation-settings: 'FILL' 0, 'wght' 1900, 'GRAD' 0, 'opsz' 500;
+}
+
+
+.primeira-secao {
+    width: 100%;
+    height: 523px;
+    background-image: url(/Imagens/Banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(15% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    padding: 5px;
+    font-size: 18px;
+    color: #3d016f;
+    font-weight: 900;
+    text-align: center;
+}
+
+#foto-card {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card p {
+    color: #000000;
+    font-weight: 600;
+}
+
+.card img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.precos {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    gap: 20px;
+}
+
+.precos img {
+    width: 50px;
+}
+
+/* Estilo básico para o footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(#6911b1, #3d016f, #19001b);
+    color: white;
+}
+
+/* Logo do footer */
+.logo-footer .footer-logo {
+    width: 120px;
+}
+
+/* Informações do footer */
+.informa-footer {
+    text-align: center;
+}
+
+/* Ícones de redes sociais */
+.icones-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.icones-footer a {
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 799px) {
+
+    footer {
+        display: block;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo-footer {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        width: 250px;
+    }
+
+    .icones-footer {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .icones-footer a {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        /* 2 cards por linha em telas menores */
+    }
+
+    .menu-responsivo {
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .primeira-secao {
+        width: 100%;
+        height: 300px;
+        background-image: url(/Imagens/BannerCLL.png);
+        background-size: cover;
+        background-position: top;
+    }
+}
