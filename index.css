@@ -86,7 +86,7 @@ nav ul a:hover li {
     gap: 20px;
     padding: 20px;
     justify-content: center;
-    
+
 }
 
 .card {
@@ -103,6 +103,21 @@ nav ul a:hover li {
     color: #3d016f;
     font-weight: 900;
     text-align: center;
+}
+
+.card button{
+    border-radius: 50%;
+    background-color: #4b007c;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#adicionar-carrinho{
+    padding: 10px;
+    width: 50px;
 }
 
 #foto-card {
@@ -123,8 +138,9 @@ nav ul a:hover li {
 .precos {
     display: flex;
     justify-content: space-around;
-    justify-items: center;
+    align-items: center;
     gap: 20px;
+    padding: 0 5px;
 }
 
 .precos img {
@@ -159,12 +175,138 @@ footer {
 
 .icones-footer a {
     text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
 }
 
 .social-icon {
     width: 30px;
     height: 30px;
     object-fit: cover;
+}
+
+
+/* Estilo para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #3d016f;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.close-modal {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: darkred;
+}
+
+.cart-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.decrease{
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.increase{
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4b007c;
+    box-shadow: 2px 2px 2px #b6b6b6;
+}
+
+#carrinho img {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+#cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -195,6 +337,7 @@ footer {
         justify-content: center;
         margin-top: 10px;
     }
+
     .icones-footer a {
         padding: 10px;
         border-radius: 50%;
@@ -226,5 +369,19 @@ footer {
         background-image: url(/Imagens/BannerCLL.png);
         background-size: cover;
         background-position: top;
+    }
+    
+    #adicionar-carrinho{
+        width: 40px;
+    }
+
+    .precos{
+        font-size: 15px;
+        gap: 5px;
+        align-items: center;
+    }
+
+    #cards-container{
+        gap: 5px;
     }
 }

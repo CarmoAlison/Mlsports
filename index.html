@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Amostra</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/Imagens/logoroxa.png" type="icon">
     <link rel="stylesheet" href="resposivoIndex.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
 </head>
 
 <body>
@@ -22,16 +24,16 @@
                 <span class="material-symbols-outlined">menu</span>
             </div>
             <ul id="Menu">
-                <a href="">
+                <a href="index.html">
                     <li>Home</li>
                 </a>
-                <a href="">
+                <a href="/Camisas/Camisas.html">
                     <li>Camisas</li>
                 </a>
                 <a href="">
                     <li>Calções</li>
                 </a>
-                <a href="">
+                <a href="/Sapatos/Sapatos.html">
                     <li>Sapato</li>
                 </a>
                 <a href="">
@@ -43,6 +45,25 @@
     </header>
     <section class="primeira-secao">
     </section>
+
+    <button id="carrinho">
+        <img src="imagens/cart.png" alt="">
+        <span id="cart-count">0</span>
+    </button>
+    
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: R$ 0,00</p>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+        <!-- Botão de Finalizar Compra -->
+
+    </div>
     <main>
         <div id="cards-container"></div>
     </main>
